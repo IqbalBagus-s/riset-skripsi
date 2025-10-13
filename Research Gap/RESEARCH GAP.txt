@@ -10,16 +10,11 @@ Berdasarkan kondisi tersebut, penelitian ini berfokus pada analisis perbandingan
 
 🔍 Identifikasi Gap Penelitian
 
-Berdasarkan hasil telaah literatur dan perkembangan riset terkini, dapat diidentifikasi beberapa kesenjangan (research gap) sebagai berikut:
-
 Kesenjangan penerapan konteks dataset:
 Sebagian besar penelitian CBAM berfokus pada dataset besar (misalnya ImageNet, COCO, atau CIFAR-100), sementara benchmark pada dataset skala menengah seperti Tiny ImageNet masih jarang dilakukan.
 
 Kesenjangan komparatif antar model dasar dan modifikasi:
 Belum ada kajian yang membandingkan secara sistematis performa ResNet-18 dan ResNet-18 + CBAM dalam aspek akurasi validasi, loss convergence, dan efisiensi waktu pelatihan pada dataset Tiny ImageNet.
-
-Kesenjangan analisis interpretabilitas model:
-Sebagian penelitian hanya menyoroti peningkatan akurasi, tetapi belum banyak yang menganalisis bagaimana peta perhatian (attention map) CBAM mempengaruhi fokus model terhadap area citra yang relevan.
 
 Kesenjangan empiris pada integrasi modul attention ringan:
 CBAM dikenal sebagai modul yang ringan dan mudah diintegrasikan, tetapi efeknya pada model berkapasitas kecil (seperti ResNet-18) dengan dataset menengah belum banyak dibuktikan secara empiris.

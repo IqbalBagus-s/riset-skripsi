@@ -1,23 +1,17 @@
 METODOLOGI PENELITIAN
 3.1 Paradigma Penelitian
 
-Penelitian ini menggunakan paradigma positivistik, sebagaimana dijelaskan dalam pedoman Prof. Arif Djunaidy (lihat PDF “Pemilihan Metode”). Paradigma positivistik berasumsi bahwa realitas bersifat objektif dan dapat diukur secara kuantitatif. Dalam konteks ini, model CNN ResNet-18 dan ResNet-18 dengan modul CBAM diuji melalui eksperimen untuk melihat hubungan sebab-akibat antara penambahan modul attention dan peningkatan performa klasifikasi.
+Penelitian ini menggunakan paradigma positivistik, paradigma positivistik berasumsi bahwa realitas bersifat objektif dan dapat diukur secara kuantitatif. Dalam konteks ini, model CNN ResNet-18 dan ResNet-18 dengan modul CBAM diuji melalui eksperimen untuk melihat hubungan sebab-akibat antara penambahan modul attention dan peningkatan performa klasifikasi.
 
 Paradigma ini sesuai karena penelitian:
-
-Menggunakan data numerik (accuracy, loss, precision, recall) untuk analisis.
-
-Menguji hipotesis melalui eksperimen terkontrol.
-
-Melibatkan proses deduktif dari teori menuju pengujian empiris.
+- Menggunakan data numerik (accuracy, loss, precision, recall) untuk analisis.
+- Menguji hipotesis melalui eksperimen terkontrol.
+- Melibatkan proses deduktif dari teori menuju pengujian empiris.
 
 3.2 Jenis dan Pendekatan Penelitian
 
-Jenis penelitian ini adalah penelitian kuantitatif eksperimental (experimental research), yang termasuk dalam kategori positivistic methodology
+Jenis penelitian ini adalah penelitian kuantitatif eksperimental (experimental research), yang termasuk dalam kategori positivistic methodology.
 
-09-Pemilihan_Metode
-
-.
 Penelitian dilakukan dengan cara memanipulasi satu variabel independen (penambahan modul CBAM pada arsitektur ResNet-18) dan mengamati pengaruhnya terhadap variabel dependen (tingkat akurasi klasifikasi pada dataset Tiny ImageNet).
 
 Pendekatan ini bertujuan untuk menemukan hubungan sebab-akibat dan menilai secara empiris apakah integrasi CBAM benar-benar meningkatkan performa model CNN dasar.
@@ -34,7 +28,7 @@ Dataset: Tiny ImageNet-200 yang berisi 200 kelas gambar dengan resolusi 64×64 p
 
 Pelatihan dan Evaluasi: Kedua model dilatih dan diuji menggunakan data yang sama untuk memperoleh hasil perbandingan yang adil.
 
-Analisis Hasil: Perbandingan dilakukan berdasarkan metrik evaluasi kuantitatif seperti Top-1 Accuracy, Validation Loss, dan Confusion Matrix.
+Analisis Hasil: Perbandingan dilakukan berdasarkan metrik evaluasi kuantitatif.
 
 3.4 Variabel Penelitian
 
@@ -43,12 +37,12 @@ Penambahan modul attention CBAM pada arsitektur ResNet-18.
 
 Variabel Dependen (Y):
 Hasil performa model yang diukur melalui:
-
-Top-1 Accuracy
-
-Validation Loss
-
-Precision, Recall, F1-Score
+Accuracy - Top-1 dan Top-5 accuracy
+Parameters - Jumlah total parameters
+FLOPs - Floating point operations
+Inference Time - Waktu inferensi per gambar
+Memory Usage - GPU memory consumption
+Training Time - Waktu training per epoch
 
 3.5 Dataset dan Sumber Data
 
